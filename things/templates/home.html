@@ -6,7 +6,7 @@
   <h1>
     Things
   </h1>
-  <form action='{% url "submit_thing"%}' method="post" 
+  <form action='{% url "submit_thing"%}' method="post">
         {% csrf_token %}
         {{ form.as_p }}
         <input type="submit" value="Submit">
